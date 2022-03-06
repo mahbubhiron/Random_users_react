@@ -10,11 +10,11 @@ const Users = (props) => {
     const fullName = `${title} . ${first} ${last}`;
 
     const [uDetails, setUDetails] = useState([])
-    function sName(props) {
+    function sName(props, lis) {
         const sNameHeading = ['Hi, my name is', props];
         setUDetails(sNameHeading);
     }
-    function sEmail(props) {
+    function sEmail(props, lis) {
         const sEmailHeading = ['my email is', props];
         setUDetails(sEmailHeading);
     }
@@ -36,7 +36,6 @@ const Users = (props) => {
         const sPhoneHeading = ['my password is', props.password];
         setUDetails(sPhoneHeading);
     }
-
     return (
         <div>
             <div className="main">
